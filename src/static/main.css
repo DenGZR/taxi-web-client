@@ -1,0 +1,615 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto/RobotoMedium.ttf');
+}
+
+.home-page {
+  font-size: 14px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Roboto;
+  background: #262A33;
+  color: #fff;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.home-page {
+  position: relative;
+}
+.home-page .main-content .page-block {
+  height: 100vh;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.main-content .main-banner {
+  position: relative;
+}
+
+.public-offer-page .main-content .main-banner .bg-main-banner {
+  background: url("../images/main_page/bg-banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-content .main-banner .bg-main-banner {
+  background: url("../images/main_page/bg-banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+}
+.main-content .main-banner .menu-mobile {
+  position: absolute;
+  left: -450px;
+  top: 0;
+  background: #dddfe5;
+  color: #000;
+  z-index: 1;
+  width: 80%;
+  max-width: 350px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+.main-content .main-banner .menu-mobile.slide-right {
+  left: 0;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5px;
+  margin: 15px;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  background: url("../images/main_page/menu-btn-close.png") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-line {
+  margin: 10px 35px;
+  border-bottom: 1px solid #000;
+}
+.main-content .main-banner .menu-mobile .sc {
+  text-align: center;
+  margin: 20px;
+}
+.main-content .main-banner .menu-mobile .sc a {
+  margin-left: 5%;
+  width: 20%;
+}
+.main-content .main-banner .menu-mobile .sc a img {
+  width: 15%;
+}
+.main-content .main-banner .menu-mobile .app-link-list {
+  text-align: center;
+}
+.main-content .main-banner .menu-mobile .app-link-list .app-link-item {
+  margin: 10px 0;
+}
+.main-content .our-app .app-link-list .app-link-item img {
+    width: 160px;
+    height: 60px;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-nav .menu-mobile-nav-item {
+  padding: 10px 20px;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-nav .menu-mobile-nav-item:hover {
+  background: #2a2e3b;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-nav .menu-mobile-nav-item:hover a {
+  color: #8df2ff;
+}
+.main-content .main-banner .menu-mobile .menu-mobile-nav .menu-mobile-nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.main-content .main-banner .main-navigation {
+  background: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 15.96px;
+}
+.main-content .main-banner .main-navigation .navbar-header .navbar-toggle {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+.main-content .main-banner .main-navigation .navbar-header .navbar-toggle .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.main-content .main-banner .main-navigation .navbar-header .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 4px 0;
+}
+.main-content .main-banner .main-navigation .navbar-header .navbar-toggle:hover {
+  border: 1px solid #8df2ff;
+}
+.main-content .main-banner .main-navigation .navbar-header .navbar-toggle:hover .icon-bar {
+  background: #8df2ff;
+}
+.main-content .main-banner .main-navigation .navbar-header .navbar-toggle .icon-bar {
+  background: #fff;
+}
+.main-content .main-banner .main-navigation .navbar-nav {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.main-content .main-banner .main-navigation .navbar-nav > li {
+  float: none;
+  margin-left: 10px;
+  display: inline-block;
+}
+.main-content .main-banner .main-navigation .nav > li > a {
+  background: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #fff;
+}
+.main-content .main-banner .main-navigation .nav > li > a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #8df2ff;
+}
+.main-content .main-banner .main-banner-logo {
+  background: url("../images/main_page/logo-img.png") no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+  text-align: center;
+}
+.main-content .main-banner .main-banner-logo .logo-title {
+  text-transform: uppercase;
+  margin: 150px 0 0 0;
+  font-size: 16.8px;
+}
+.main-content .main-banner .main-slider {
+  margin: 50px 0 0 0;
+  height: 250px;
+}
+.main-content .main-banner .main-slider .slider-item-title {
+  font-size: 25.2px;
+  padding-top: 20px;
+}
+.main-content .main-banner .main-slider .slider-item-text {
+  line-height: 26px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+}
+.main-content .main-banner .main-slider .owl-carousel .owl-controls {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+.main-content .main-banner .main-slider .owl-carousel .owl-controls .owl-buttons .owl-prev {
+  position: absolute;
+  left: -50px;
+  background: url('../images/main_page/slider-control-but-prev.png') no-repeat;
+  width: 50px;
+  height: 80px;
+}
+.main-content .main-banner .main-slider .owl-carousel .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  right: -50px;
+  width: 50px;
+  height: 80px;
+  background: url('../images/main_page/slider-control-but-next.png') no-repeat;
+}
+
+.main-content .our-app {
+  position: relative;
+}
+.main-content .our-app .bg-our-app {
+  background: url("../images/main_page/our-app-bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+.main-content .our-app .massage-block {
+  background: #373f5a;
+  margin: 60px 0;
+  padding: 5px;
+  position: relative;
+  box-shadow: 0px 0px 50px 25px rgba(0, 0, 0, 0.2);
+}
+.main-content .our-app .massage-block::after {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background: #373f5a;
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.main-content .our-app .massage-block .massage-block-title {
+  padding: 40px 30px;
+  text-transform: uppercase;
+  color: #8df2ff;
+}
+.main-content .our-app .massage-block .massage-block-content {
+  padding: 0 30px 5% 30px;
+  line-height: 24px;
+  font-size: 16.8px;
+  font-weight: lighter;
+}
+.main-content .our-app .app-link-list {
+  margin-top: 30px;
+}
+.main-content .our-app .app-link-list .app-link-item {
+  margin: 30px 5px;
+  display: inline-block;
+}
+.main-content .our-app .col-xs-4 {
+  padding: 0;
+}
+.main-content .our-app .our-app-img {
+  height: 80vh;
+}
+.main-content .our-app .phone-left {
+  background: url("../images/main_page/our-app-iphone-left.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 80px;
+}
+.main-content .our-app .phone-center {
+  background: url("../images/main_page/our-app-iphone-center.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.main-content .our-app .phone-right {
+  background: url("../images/main_page/our-app-iphone-right.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: -60px;
+}
+
+.main-content .fuel-coupons {
+  text-align: center;
+  padding-top: 10%;
+}
+.text-title {
+  /*padding: 0 30px;*/
+  text-align: left;
+  font-size: 16.8px;
+  line-height: 26px;
+  font-weight: lighter;
+}
+.main-content .fuel-coupons .fuel-coupons-img {
+  height: 50vh;
+}
+.main-content .fuel-coupons .phone-1 {
+  background: url("../images/main_page/iphone-1.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.main-content .fuel-coupons .phone-2 {
+  background: url("../images/main_page/iphone-2.png") no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+/*.main-content .fuel-coupons .big-btn {
+  margin: 30px 0 30px 0;
+  text-align: center;
+}*/
+.main-content .fuel-coupons .big-btn .btn {
+  min-width: 100%;
+  padding: 15px 10px;
+}
+.main-content .become-driver {
+  background: url("../images/main_page/bg-block5.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.main-content .become-driver .bg-become-driver {
+  background: url("../images/main_page/our-app-bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -10;
+}
+.main-content .become-driver .become-driver-img {
+  margin: 50px 0;
+  height: 60vh;
+  background: url("../images/main_page/iphone-5.png") no-repeat;
+  background-size: contain;
+}
+.main-content .become-driver .main-title {
+  width: 60%;
+}
+.main-content .become-driver .text-title {
+  font-size: 16.8px;
+  line-height: 26px;
+  font-weight: lighter;
+}
+.main-content .become-driver .info-massege {
+  position: relative;
+}
+
+.main-content .become-driver .info-massege.closed .dropdown {
+  display: none;
+}
+
+.main-content .become-driver .info-massege .dropdown {
+  position: absolute;
+  top: -515px;
+  background: rgba(0,0,0,0.9);
+  border: 1px solid #353131;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  width: 440px;
+  z-index: 1000;
+}
+
+.main-content .become-driver .info-massege .dropdown h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.main-content .become-driver .info-massege .dropdown ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  line-height: 16px;
+}
+.main-content .become-driver .info-massege .dropdown ol li {
+  list-style: decimal;
+  padding-bottom: 10px;
+  line-height: 19px;
+}
+.main-content .become-driver .info-massege .dropdown .btn-app {
+    display: block;
+    padding: 10px 0;
+    /*text-align: center;*/
+}
+.main-content .become-driver .info-massege .dropdown .admin-block {
+  padding-bottom: 15px;
+}
+.main-content .become-driver .info-massege .dropdown .more-terms {
+  display: block;
+  margin: 10px 0;
+}
+
+.main-content .become-driver .info-massege .dropdown .btn-cancel {
+  position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+}
+
+.main-content .contacts {
+  padding: 50px 0;
+  background-image: url("../images/main_page/bg-contacts-map.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+}
+.main-content .contacts p {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.main-content .contacts .sc img {
+  width: 45px;
+  margin: 2%;
+}
+
+.main-title {
+  margin: 15% 0 5% 0;
+  text-transform: uppercase;
+  font-size: 25.2px;
+  text-align: left;
+}
+.big-btn {
+  margin: 50px 0 10px 0;
+}
+.big-btn .btn {
+  background: #8df2ff;
+  color: #000;
+  font-size: 16.8px;
+  text-transform: uppercase;
+  border-radius: 0;
+  box-shadow: 0px 0px 15px 1px #8df2ff;
+  padding: 15px 50px;
+  text-shadow: none;
+  border: none;
+  display: inline-block;
+  min-width: 280px;
+}
+.yellow-btn {
+  margin: 50px 0 10px 0;
+}
+.yellow-btn .btn {
+  background: #f6e70c;
+  color: #000;
+  display: inline-block;
+  font-size: 16.8px;
+  text-transform: uppercase;
+  border-radius: 0;
+  box-shadow: 0px 0px 15px 1px #f6e70c;
+  padding: 15px 50px;
+  text-shadow: none;
+  border: none;
+  min-width: 280px;
+}
+
+@media (max-width: 900px) {
+  .main-content .main-banner .main-navigation {
+    font-size: 12.6px;
+  }
+  .main-content .main-banner .main-slider .slider-item-title {
+    font-size: 16.8px;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    overflow-y: scroll;
+  }
+  .main-content .main-banner .main-slider {
+     margin: 0 0 0 0;
+     height: inherit;
+  }
+  .main-content .become-driver .info-massege .dropdown {
+    left: -5%;
+    width: 75vw;
+  }
+  .main-content .main-banner .main-banner-logo .logo-title {
+    margin: 100px 0 0 0;
+  }
+  .main-content .our-app .bg-our-app {
+    display: none;
+  }
+  .main-content .our-app .phone-left {
+    margin-top: 0;
+  }
+  .main-content .our-app .our-app-img {
+    height: 50vh;
+  }
+  .main-content .fuel-coupons .fuel-coupons-img {
+    height: 50vh;
+  }
+  .main-content .contacts {
+    background: none;
+  }
+  .main-content .contacts .main-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .main-content .contacts .sc {
+    text-align: center;
+  }
+  .main-content .contacts .sc img {
+    margin: 1% ;
+  }
+  .big-btn {
+    margin: 5% 0 5% 0;
+    text-align: center;
+  }
+  .big-btn .btn {
+    background: #8df2ff;
+    color: #000;
+    font-size: 16.8px;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: 0px 0px 15px 1px #8df2ff;
+    padding: 15px 50px;
+    text-shadow: none;
+    border: none;
+    min-width: 280px;
+    padding: 15px 20px;
+    min-width: 100%;
+  }
+  .yellow-btn {
+    margin: 5% 0 5% 0;
+    text-align: center;
+  }
+  .yellow-btn .btn {
+    background: #f6e70c;
+    color: #000;
+    font-size: 16.8px;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: 0px 0px 15px 1px #f6e70c;
+    padding: 15px 50px;
+    text-shadow: none;
+    border: none;
+    min-width: 280px;
+    padding: 15px 20px;
+    min-width: 100%;
+  }
+  .main-content .become-driver {
+    background: none;
+  }
+  .main-content .become-driver .bg-become-driver {
+    display: none;
+  }
+  .main-content .become-driver .main-title,
+  .main-content .become-driver .text-title,
+  .main-content .fuel-coupons .main-title,
+  .main-content .fuel-coupons .text-title {
+    text-align: center;
+    width: 100%;
+  }
+}
