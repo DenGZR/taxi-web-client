@@ -110,8 +110,8 @@ export class OrderView extends Component {
   }
 
   componentDidMount () {
-    const { createConnectionWS, cookieCheker, cookieToken, socketOpen, mapUtils, setCurrentPositionToMap } = this.props
-  
+    const { createConnectionWS, cookieCheker, cookieToken, socketOpen } = this.props
+
     if (this.state.addonPlaces.length <= 0) {
       this._addMoreAutocomplete()
     }

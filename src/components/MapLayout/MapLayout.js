@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
-import { initMap, setCurrentPositionToMap } from '../../redux/modules/mapUtils'
+import { initMap, setCurrentPositionToMap, reverseGeocoding } from '../../redux/modules/mapUtils'
 
 export class MapLayout extends Component {
   static propTypes = {
@@ -19,10 +19,13 @@ export class MapLayout extends Component {
     }
   }
   componentWillReceiveProps (props) {
-    const { userLocation, setCurrentPositionToMap } = props
+    const { userLocation, setCurrentPositionToMap, reverseGeocoding } = props
     // console.log('MapLayout updete props userLocation', userLocation);
     if( userLocation.isLocated ) {
+      debugger
+      let latlng = {lat: userLocation.latitude , lng: userLocation.longitude};
       setCurrentPositionToMap()
+      reverseGeocoding({'location': latlng})
     }
   }
   componentDidMount () {
@@ -48,5 +51,6 @@ const mapStateToProps = (state) => ({
 })
 export default connect((mapStateToProps), {
   initMap,
-  setCurrentPositionToMap
+  setCurrentPositionToMap,
+  reverseGeocoding
 })(MapLayout)

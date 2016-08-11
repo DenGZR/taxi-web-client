@@ -400,9 +400,11 @@ export const reverseGeocoding = (latlng, dragend, currentMarker) => {
     return new Promise((resolve) => {
       const Geocoder = getState().mapUtils.Geocoder
       const google = getState().mapUtils.google
+
       Geocoder.geocode(latlng, (results, status) => {
         if (status === google.GeocoderStatus.OK) {
           if (results[1]) {
+            console.log('Geocoder.geocode', results[0]);
             dispatch(googlePlaceParser(results[0]))
             results.forEach((item) => {
               if (item.types.indexOf('country') !== -1 && item.address_components[0].short_name === 'UA') {
