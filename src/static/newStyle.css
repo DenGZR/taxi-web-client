@@ -546,6 +546,7 @@ a {
   position: relative;
   z-index: 1;
   min-width: 295px;
+  max-width: 600px;
   width: 40%;
   margin-left: 5%;
   margin-top: 20px;

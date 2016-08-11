@@ -22,7 +22,7 @@ export class MapLayout extends Component {
     const { userLocation, setCurrentPositionToMap, reverseGeocoding } = props
     // console.log('MapLayout updete props userLocation', userLocation);
     if( userLocation.isLocated ) {
-      debugger
+      
       let latlng = {lat: userLocation.latitude , lng: userLocation.longitude};
       setCurrentPositionToMap()
       reverseGeocoding({'location': latlng})

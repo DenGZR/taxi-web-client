@@ -28,9 +28,14 @@ export class Autocomplete extends Component {
     this._ID = this.props.refId
   }
   componentDidMount () {
-    const { SearchBox, google } = this.props.mapUtils
+    //debugger
+    const { SearchBox, google, mapMarkers } = this.props.mapUtils
     this.SearchBox = new SearchBox(this.refs[`address_${this._ID}`])
     google.event.addListener(this.SearchBox, 'places_changed', this._place)
+
+    if ( mapMarkers.length > 0 && mapMarkers[this._ID]) {
+      this.refs[`address_${this._ID}`].value = mapMarkers[this._ID].addr_string
+    }
   }
   componentWillUnMount () {
     const { google } = this.props.mapUtils

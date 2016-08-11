@@ -90,7 +90,7 @@ export class OrderView extends Component {
     const { mapMarkers } = this.props.mapUtils
     const newMarkerArr = props.mapUtils.mapMarkers
     const { shouldRefresh } = props.aOrder
-
+//debugger
     if (shouldRefresh) {
       const { refreshState, refreshOrderCondition } = this.props
       for (var i = this.state.autocompleteId; i > 1; i--) {
@@ -111,7 +111,7 @@ export class OrderView extends Component {
 
   componentDidMount () {
     const { createConnectionWS, cookieCheker, cookieToken, socketOpen } = this.props
-
+//debugger
     if (this.state.addonPlaces.length <= 0) {
       this._addMoreAutocomplete()
     }
