@@ -431,9 +431,18 @@ a:focus {
   line-height: 19px;
 }
 .main-content .become-driver .info-massege .dropdown .btn-app {
-    display: block;
-    padding: 10px 0;
+    display: inline-block;;
+    padding: 10px;
     /*text-align: center;*/
+}
+.main-content .become-driver .info-massege .dropdown .btn-app img {
+  width: 160px;
+  height: 55px;
+}
+.main-content .become-driver .info-massege .dropdown .driver-qr-code img {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
 }
 .main-content .become-driver .info-massege .dropdown .admin-block {
   padding-bottom: 15px;

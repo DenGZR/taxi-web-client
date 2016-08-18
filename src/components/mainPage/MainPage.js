@@ -221,11 +221,17 @@ class mainPage extends React.Component {
                             </ol>
                             <a href='/publicoffer' className="more-terms" >Подробнее: условия публичной оферты</a>
                             <span className="admin-block">С уважением,<br/> Администрация COMBOTAXI</span>
-                            <a href='https://play.google.com/store/apps/details?id=com.dtlo.kiev_taxi' className='btn-app' type='button'>
-                                <img src="./images/main_page/google-play-logo.png" alt="google play logo"/>
-                            </a>
                             <p>
+                              <a href='https://play.google.com/store/apps/details?id=com.dtlo.kiev_taxi' className='btn-app' type='button'>
+                                  <img src="./images/main_page/google-play-logo.png" alt="google play logo"/>
+                              </a>
+                              <a href='https://itunes.apple.com/us/app/combotaxi-driver/id1131050321' className='btn-app' type='button'>
+                                  <img src="./images/main_page/app-store-logo.png" alt="app store logo"/>
+                              </a>
+                            </p>
+                            <p className="driver-qr-code">
                               <img src="./images/main_page/driver-app-qr-code.png" alt="driver qr code"/>
+                              <img src="./images/main_page/driver-app-ios-qr-code.png" alt="driver ios qr code"/>
                             </p>
                           </div>
                         </div>
